@@ -188,13 +188,20 @@ section .title::after{
 .home .max-width{
   width: 100%;
   display: flex;
+  height: 100%;
 }
 .home .max-width .row{
   margin-right: 0;
 }
+.home .home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .home .home-content .card-1{
     min-width: calc(50% - 20px);
     position: relative;
+    display: flex;
     top: 250px;
     right: 100px;
     left: 0px;
@@ -205,14 +212,12 @@ section .title::after{
     padding: 50px 25px;
     padding-top: 10px;
     padding-bottom: 10px;
-   /* margin: 5px 0;
-    margin-bottom: 0px; */
     cursor: pointer;
     transition: all 0.3s ease;
 }
 .home .home-content .card-1::after{
     content: "";
-    display: block;
+    display: flex;
 } 
 
 .home .home-content .card-1:hover{
@@ -233,16 +238,20 @@ section .title::after{
 {
     background: #fff;
 }
-
 .about-us .about-us-content .card{
     width: calc(33% - 20px);
     background: #810541;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: left;
     border-radius: 6px;
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 20px;
+    margin-bottom: 50px;
 }
 
 .about-us .about-us-content .card-2{
@@ -250,8 +259,8 @@ section .title::after{
     background: #810541;
     text-align: left;
     border-radius: 6px;
-    padding: 50px 25px;
-    margin-top: 75px;
+    padding: 60px 25px;
+    margin-bottom: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -260,13 +269,16 @@ section .title::after{
 .about-us .about-us-content .card-1{
     width: calc(33% - 20px);
     background: #810541;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: left;
     border-radius: 6px;
     padding: 30px 15px;
     padding-bottom: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-top: 72px;
+    margin-bottom: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -301,6 +313,9 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .about-us .about-us-content .card-2 .text{
     font-size: 25px;
@@ -308,7 +323,7 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 .about-us .about-us-content .card-1 .text{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
@@ -410,10 +425,6 @@ section .title::after{
 .contact .title{
     color: white;
 }
-
-.contact .contact-content .column{
-    width: calc(50% - 30px);
-}
 .contact .contact-content .text{
     font-size: 20px;
     font-weight: 600;
@@ -427,8 +438,6 @@ section .title::after{
 }
 .contact .contact-content .row{
     display: flex;
-    height: 65px;
-    align-items: center;
     margin-top: 10px;
 }
 .contact .contact-content .row .info{
@@ -441,9 +450,11 @@ section .title::after{
 }
 .contact .contact-content .info .head{
     font-weight: 500;
+    color: white;
 }
 .contact .contact-content .info .sub-title{
     color: #333;
+    display: flex;
 }
 
 .contact .contact-content .map-responsive{
@@ -515,10 +526,6 @@ footer span a:hover{
         margin: 20px 0;
         font-size: 25px;
     }
-    .home .home-content .text-1{
-        display: block;
-
-    }
     .home .home-content a{
         font-size: 23px;
         padding: 10px 30px;
@@ -547,6 +554,9 @@ footer span a:hover{
     .max-width{
         padding: 0 23px;
     }
+   .home .home-content .card-1{
+        margin-top: -300px;
+    }
     .home .home-content a{
         font-size: 20px;
     }
@@ -560,6 +570,15 @@ footer span a:hover{
     }
     .about-us .about-us-content .right{
         flex: 100%;
+    }
+    .about-us .about-us-content .card{
+        width: 90%
+    }
+    .about-us .about-us-content .card-1{
+        width: 90%
+    }
+    .about-us .about-us-content .card-2{
+        width: 90%
     }
     .column .contact .contact-content .column{
         width: 100%;
